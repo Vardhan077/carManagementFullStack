@@ -1,0 +1,180 @@
+/* Dashboard.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  /* Main container */
+  .mainC {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  /* Title Section */
+  h1 {
+    font-size: 3rem;
+    color: #111;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  /* Search Bar */
+  input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    background-color: #fff;
+    margin-bottom: 40px;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #1e1e1e;
+  }
+  
+  /* Car List Styling */
+  .car-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  
+  .car {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    height: auto;
+    width: 90vw;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .car img {
+    width: fit-content;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .car-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 15px;
+    color: #111;
+  }
+  
+  .car-description {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .car button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+  
+  .car button:hover {
+    background-color: #333;
+  }
+  
+  /* Add Car Button */
+  .add-car-btn {
+    background-color: #1e1e1e;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 15px 20px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  
+  .add-car-btn:hover {
+    background-color: #333;
+  }
+  
+  /* Modal Styling */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    width: 500px;
+    max-width: 90%;
+  }
+  
+  .modal-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e1e1e;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  textarea {
+    height: 150px;
+    resize: none;
+  }
+  
+  input[type="file"] {
+    margin-bottom: 20px;
+  }
+  
+  button.cancel {
+    background-color: #e0e0e0;
+    color: #1e1e1e;
+  }
+  
+  button.cancel:hover {
+    background-color: #c0c0c0;
+  }
+  
+  button:hover {
+    background-color: #333;
+  }
+  
